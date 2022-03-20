@@ -28,6 +28,18 @@
   color: #61dafb;
 }
 
+header {
+  background-color: royalblue;
+  color: #fff;
+  padding: 1px;
+}
+
+.footer {
+  background-color: royalblue;
+  color: #fff;
+  padding: 10px 0px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
