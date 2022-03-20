@@ -9,10 +9,20 @@ const Content = () => {
   const handleClick = () => {
     console.log("You clicked it");
   };
+  const handleClickParam = (name) => {
+    console.log(`${name} was clicked`);
+  };
+  const handleClickE = (e) => {
+    console.log(e.target.innerText);
+  };
   return (
     <main>
-      <p>Hello {handleNameChange()}!</p>
+      <p onDoubleClick={handleClick}>Hello {handleNameChange()}!</p>
       <button onClick={handleClick}>Click it</button>
+      <button onClick={() => handleClickParam(handleNameChange())}>
+        Click it
+      </button>
+      <button onClick={(e) => handleClickE(e)}>Click it</button>
     </main>
   );
 };
